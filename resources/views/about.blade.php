@@ -6,6 +6,6 @@
 	<title>Document</title>
 </head>
 <body>
-	This is the first post
+	<h1>This is the about page</h1>
 </body>
 </html>

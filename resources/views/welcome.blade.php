@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello there</h1>
+    <h1>This is the homepage</h1>
+    <a href="{{route('about')}}">About</a>
+    <a href="{{route('mypost')}}">Posts</a>
 </body>
 </html>
