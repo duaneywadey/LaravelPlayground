@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>This is the post page</h1>
+	<h1>This is the users page</h1>
+	@foreach($user as $id => $u)
+		<h3>{{ $u['name'] }} | {{ $u['phone'] }} | {{ $u['city'] }}
+			<a href="{{	route('view.user', $id) }}">Show</a>
+		</h3>
+	@endforeach
 </body>
 </html>
