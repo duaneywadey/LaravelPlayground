@@ -4,10 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>This post is {{ $postDesc }}</h1>
-	<h1>This author is {{ $author }}</h1>
+	<h1>Type Something Here</h1>
+	<form action="{{route('handleForm')}}" method="POST">
+		@csrf
+		<input type="text" name="inputField">
+		<input type="submit" name="submitBtn">
+	</form>
 </body>
 </html>

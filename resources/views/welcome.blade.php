@@ -12,11 +12,13 @@
         $fruits = ["one"=>"Apple", "two"=>"Banana", "three"=>"Pineapple"];
     @endphp
 
-    @include('pages.header', ['names' => $fruits])
+    @include('header', ['names' => $fruits])
     <h1>This is the homepage</h1>
     <a href="/about">About</a>
     <a href="/post">Posts</a>
-    <a href="/users">Users</a>
-    @include('pages.footer')
+    <a href="{{route('showForm')}}">Form Test</a>
+    <a href="{{route('usernamedivan')}}">User Named Ivan</a>
+    <a href="{{route('contactsAlternative')}}">Contacts Alternative</a>
+    @include('footer')
 </body>
 </html>

@@ -4,10 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>This post is {{ $postDesc }}</h1>
-	<h1>This author is {{ $author }}</h1>
+	<h1 style="background-color: pink; padding: 25px;">This is the header part</h1>
 </body>
 </html>

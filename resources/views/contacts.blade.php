@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>This post is {{ $postDesc }}</h1>
-	<h1>This author is {{ $author }}</h1>
+	<h1>Contacts Page</h1>
+	@php
+	echo "<pre>";
+	print_r($contacts);
+	echo "<pre>";
+	@endphp
 </body>
 </html>
